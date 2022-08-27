@@ -36,7 +36,7 @@ def get_keyboard(category):
     markup.add_button(Button.Text(Color.NEGATIVE, BACK))
     return markup
 
-@dp.message_handler(commands=['/start'])
+@dp.message_handler(commands=['start'])
 def cmd_start(event: types.Message):
     event.answer(
         message='Добро пожаловать! Выберите интересующую вас категорию.', 
