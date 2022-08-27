@@ -16,7 +16,7 @@ BACK = 'НАЗАД'
 DIR = pathlib.Path(__file__).parent.resolve()
 MEDIA_DIR = os.path.join(DIR, 'media')
 ENV = dotenv_values(os.path.join(DIR, '.env'))
-TOKEN = ENV['token']
+TOKEN = ENV['access_token']
 
 
 vk = Vk(access_token=TOKEN, api_version='5.131')
